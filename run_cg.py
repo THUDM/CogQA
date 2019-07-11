@@ -318,7 +318,7 @@ def main(output_model_file = './models/bert-base-uncased.bin', load = False, mod
     with open('./hotpot_train_v1.1_refined3.json' ,'r') as fin:
         dataset = json.load(fin)
     bundles = []
-    for data in tqdm(dataset[:100]):
+    for data in tqdm(dataset):
         try:
             bundles.append(convert_question_to_samples_bundle(tokenizer, data))
         except Exception as err:
