@@ -2,7 +2,7 @@
 
 ### [Project](https://sites.google.com/view/cognitivegraph/) | [arXiv](https://arxiv.org/abs/1905.05460)
 
-Source codes for the paper **Cognitive Graph for Multi-Hop Reading Comprehension at Scale.  ** *(ACL 2019 Oral)* 
+Source codes for the paper **Cognitive Graph for Multi-Hop Reading Comprehension at Scale.**  *(ACL 2019 Oral)* 
 
 We also have a [Chinese blog](https://zhuanlan.zhihu.com/p/72981392) about CogQA on Zhihu (知乎) besides the [paper](https://arxiv.org/abs/1905.05460).
 
