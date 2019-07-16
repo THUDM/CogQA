@@ -31,7 +31,7 @@ for filename in tqdm(files):
                     db.delete(page['title'])
                     db.rpush(page['title'], *(page['text']))
                     for i, sentence in enumerate(page['text_with_links']):
-                        t = get_edges(sente nce)   
+                        t = get_edges(sentence)   
                         if len(t) > 0:
                             name = 'edges:###'+ str(i) + '###' + page['title']
                             db.delete(name)
