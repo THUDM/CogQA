@@ -28,12 +28,12 @@ The codes automatic assign tasks on all available devices, each handling `batch_
 
 ## Evaluation
 
-The `cogqa.py` is the algorithm to answer questions with a trained model. We split the 1-hop nodes found by another similar model into `fullwiki_input_improved_by_cogqa1hop.zip` for reuse in other algorithm. It  can **directly** improve your result on fullwiki setting by just replacing the original input.
+The `cogqa.py` is the algorithm to answer questions with a trained model. We split the 1-hop nodes found by another similar model into `improved_retrieval.zip` for reuse in other algorithm. It  can **directly** improve your result on fullwiki setting by just replacing the original input.
 
-1. unzip  ` fullwiki_input_improved_by_cogqa1hop.zip`.
+1. unzip  ` improved_retrieval.zip`.
 
 2. `python cogqa.py --data_file='hotpot_dev_fullwiki_v1_merge.json'`
-3. `python hotpot_evaluate_v1.py hotpot_dev_fullwiki_v1_merge_pred.json hotpot_dev_fullwiki_merge_v1.json ` 
+3. `python hotpot_evaluate_v1.py hotpot_dev_fullwiki_v1_merge_pred.json hotpot_dev_fullwiki_v1_merge.json` 
 4. You can check the cognitive graph (reasoning process) in the `cg` part of the predicted json file.
 
 ## Notes
