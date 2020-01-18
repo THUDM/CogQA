@@ -15,7 +15,7 @@ CogQA is a novel framework for multi-hop question answering in **web-scale** doc
 1. Download and setup Redis database following https://redis.io/download
 2. Download the dataset, evalute script and fullwiki data (enwiki-20171001-pages-meta-current-withlinks-abstracts) from https://hotpotqa.github.io. Unzip `improved_retrieval.zip` in this repo.
 3. ``pip install -r requirements.txt``
-4. Run ``python read_fullwiki.py`` to load wikipedia documents to redis (check the size of `dump.pkl` is about 2.4GB).
+4. Run ``python read_fullwiki.py`` to load wikipedia documents to redis (check the size of `dump.rdb` in the redis folder is about 2.4GB).
 5. Run ``python process_train.py`` to generate `hotpot_train_v1.1_refined.json`, which contains edges in gold-only cognitive graphs.
 6. ``mkdir models``
 
