@@ -21,7 +21,7 @@ print('Finish Reading! len = ', len(train_set))
 
 
 from hotpot_evaluate_v1 import normalize_answer, f1_score
-from fuzzywuzzy import fuzz, process as fuzzy_process
+from rapidfuzz import fuzz, process as fuzzy_process
 
 def fuzzy_retrive(entity, pool):
     if len(pool) > 100:

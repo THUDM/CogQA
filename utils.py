@@ -1,4 +1,4 @@
-from fuzzywuzzy import fuzz, process as fuzzy_process
+from rapidfuzz import fuzz, process as fuzzy_process
 import re
 import numpy as np
 from bisect import bisect_left
