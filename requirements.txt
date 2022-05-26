@@ -6,4 +6,4 @@ redis==3.2.1
 torch==1.0.1.post2
 torchvision==0.2.2.post3
 tqdm==4.31.1
-ujson==1.35
+ujson==5.2.0
